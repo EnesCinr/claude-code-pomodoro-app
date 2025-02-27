@@ -2,6 +2,9 @@
 
 Pomodoro Focus is a desktop application that helps you organize your work using the Pomodoro Technique, manage tasks, and track your productivity statistics.
 
+## NOTE
+This project fully made with Claude Code for testing new AI capabilities.
+
 ## Features
 
 - **Pomodoro Timer**: 25-minute work sessions followed by 5-minute short breaks, with longer 15-minute breaks after completing 4 pomodoros
