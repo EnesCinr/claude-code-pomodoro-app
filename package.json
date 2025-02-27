@@ -1,0 +1,52 @@
+{
+  "name": "pomodoro-app",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./electron/main.js",
+  "scripts": {
+    "dev": "npx vite",
+    "build": "npx tsc -b && npx vite build",
+    "lint": "npx eslint .",
+    "preview": "npx vite preview",
+    "electron:dev": "npx vite",
+    "electron:start": "npx electron .",
+    "electron:build": "npm run build && npx electron-builder",
+    "web:dev": "npx vite --host --port 5173",
+    "web:build": "npx tsc -b && npx vite build"
+  },
+  "dependencies": {
+    "electron-is-dev": "^2.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^8.2.2",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.1",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "identity-obj-proxy": "^3.0.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
+  },
+  "build": {
+    "appId": "com.pomodoroapp",
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "release"
+    }
+  }
+}

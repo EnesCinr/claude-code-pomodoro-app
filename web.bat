@@ -1,0 +1,6 @@
+@echo off
+echo Starting Pomodoro App Web Version...
+echo Running Vite development server...
+cd %~dp0
+npx vite
+echo Done!

@@ -1,0 +1,104 @@
+.pomodoro-timer {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.timer-display {
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.timer-modes {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mode-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background-color: #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+.mode-button.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.mode-button:nth-child(2).active {
+  background-color: var(--secondary-color);
+}
+
+.mode-button:nth-child(3).active {
+  background-color: var(--tertiary-color);
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.control-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.control-button:hover {
+  background-color: #c04a46;
+}
+
+.control-button:last-child {
+  background-color: #6c757d;
+}
+
+.control-button:last-child:hover {
+  background-color: #5a6268;
+}
+
+.pomodoro-count {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .timer-display {
+    font-size: 4rem;
+  }
+  
+  .pomodoro-timer {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer-display {
+    font-size: 3rem;
+  }
+  
+  .timer-modes {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  
+  .control-button {
+    padding: 0.5rem 1rem;
+  }
+}

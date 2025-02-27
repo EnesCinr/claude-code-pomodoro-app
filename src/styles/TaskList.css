@@ -1,0 +1,140 @@
+.task-list {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-list h2 {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.add-task {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.task-input {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.pomodoro-estimate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pomodoro-input {
+  padding: 0.5rem;
+  width: 60px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.add-button {
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.add-button:hover {
+  background-color: #c04a46;
+}
+
+.tasks {
+  list-style-type: none;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.task-item {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item.selected {
+  background-color: rgba(217, 85, 80, 0.1);
+  border-left: 4px solid var(--primary-color);
+}
+
+.task-item.completed {
+  opacity: 0.7;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--completed-color);
+}
+
+.task-title {
+  flex: 1;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.delete-button {
+  background: none;
+  color: #999;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  transition: color 0.2s;
+}
+
+.delete-button:hover {
+  color: var(--primary-color);
+}
+
+.task-pomodoros {
+  display: flex;
+  gap: 0.3rem;
+  margin-left: 1.75rem;
+}
+
+.pomodoro-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: inline-block;
+}
+
+.pomodoro-circle.completed {
+  background-color: var(--completed-color);
+}
+
+.no-tasks {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  margin-top: 1rem;
+}
