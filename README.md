@@ -4,6 +4,9 @@ Pomodoro Focus is a desktop application that helps you organize your work using 
 
 ## NOTE
 This project fully made with Claude Code for testing new AI capabilities.
+NOT RECOMMENDED TO USE!
+
+Youtube Video Link : https://youtu.be/N0Z3lI_8lvc
 
 ## Features
 
